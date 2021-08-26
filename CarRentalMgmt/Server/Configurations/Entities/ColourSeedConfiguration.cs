@@ -10,6 +10,7 @@ namespace CarRentalMgmt.Server.Configurations.Entities
 {
     public class ColourSeedConfiguration : IEntityTypeConfiguration<Colour>
     {
+     
         public void Configure(EntityTypeBuilder<Colour> builder)
         {
             builder.HasData(

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CarRentalMgmt.Server.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -25,7 +25,8 @@ namespace CarRentalMgmt.Server.Controllers
         {
             _logger = logger;
         }
-
+        //REST VERBS
+        //GET POST PUT DELETE are HTTP REST VERBS that FACILITATE CRUD OPERATION
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
